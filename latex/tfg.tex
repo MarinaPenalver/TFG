@@ -285,7 +285,7 @@ Esta clase de eventos pueden modificar los valores que toma una serie temporal. 
 \subsection{Evaluación y comparación de modelos}
 A la hora de hacer predicciones se ha supuesto que se observa una serie temporal $\{X_1, \dotsc, X_T\}$ y se pretende predecir el valor de $X_{T+h}$. Con el fin de evaluar y comparar los modelos se ha utilizado el error absoluto medio porcentual (MAPE) y el error cuadrático medio (MSE). Las fórmulas de estos errores son
 \begin{align*}
-    \text{MAPE} \;=&\; \frac{1}{n}\sum_{i=1}^{n} \frac{\abs{\hat{X}_i - X_i}}{y_i}\cdot 100, \\
+    \text{MAPE} \;=&\; \frac{1}{n}\sum_{i=1}^{n} \frac{\abs{\hat{X}_i - X_i}}{X_i}\cdot 100, \\
     \text{MSE} \;=&\; \frac{1}{n}\sum_{i=1}^n (\hat{X}_i - X_i)^2,
 \end{align*}
 donde $X_i$ son los valores reales e $\hat{X}_i$ son los valores pronosticados para los instantes de tiempo $i=1,\dotsc, n$, $n\in \mathbb{N}$. En este proyecto, los errores se calculan comparando datos del conjunto test contra los valores pronosticados por los modelos construidos con los datos de train. Al comparar los tiempos de ejecución de los modelos, el tiempo se ha medido en segundos.
@@ -909,7 +909,7 @@ Para los datos medidos diariamente, la Figura \ref{fig:HoltWinters1} muestra có
       MSE & $1.013\cdot10^{11} $&  $4.105\cdot10^{10}$ & $7.772\cdot10^{10}$ & $3.074\cdot10^{10}$\\
       Tiempo (s) & $2.705$ &   $4.272$	 &  $2.903$ & $4.352$\\ \hline
 \end{tabular}
-\caption{Parámetros, error y tiempo del método de Holt-WInters} \label{tab:holtwinters}
+\caption{Parámetros, error y tiempo del método de Holt-Winters} \label{tab:holtwinters}
 \end{table}
 
 
