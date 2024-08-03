@@ -1,4 +1,4 @@
-# TFG: Método no clásicos de Series Temporales en Data Science
+# TFG: Métodos no Clásicos de Series Temporales en Data Science
 
 ## Resumen
 Una serie temporal es una sucesión de datos ordenados cronológicamente. El análisis de series temporales se centra en modelar su comportamiento y utilizar los modelos para producir predicciones.  El aumento en los datos disponibles ha provocado un incremento en la demanda de analistas de datos capaces de interpretar dicha información. 
